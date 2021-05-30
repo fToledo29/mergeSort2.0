@@ -1,3 +1,8 @@
+/**
+ * Merge Sort Time complexity:
+ * Worst: O(n log n)
+ * Average: O(n log n)
+ */
 
 const merge = (lA, rA) => {
 
@@ -19,10 +24,10 @@ const mergeSort = arr => {
 
 	const mid = parseInt(arr.length / 2);
 
-	return merge(
+	return merge(						
 		mergeSort(arr.slice(0, mid)),
-		mergeSort(arr.slice(mid))
-	);
+		mergeSort(arr.slice(mid))	 
+	);								
 };
 
 const inputArr = [11, 43, 1223, 3083,
@@ -40,4 +45,4 @@ console.log('Result: ', res);
  * I implemented this version of Merge Sort based on this video
  * that I found in YouTube: 
  * https://www.youtube.com/watch?v=x_Z9FcAPmbk&t=935s
- */
+ */ 
